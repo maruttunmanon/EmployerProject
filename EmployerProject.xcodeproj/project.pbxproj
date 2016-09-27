@@ -15,7 +15,10 @@
 		D703CB981D96720000483820 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CB971D96720000483820 /* MapVC.swift */; };
 		D703CBA01D96872000483820 /* SelectCarTypeAndDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CB9F1D96872000483820 /* SelectCarTypeAndDateVC.swift */; };
 		D703CBA21D968AFD00483820 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CBA11D968AFD00483820 /* DatePickerDialog.swift */; };
-		D703CBA61D968F9600483820 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CBA51D968F9600483820 /* ItemListVC.swift */; };
+		D703CBAA1D96930B00483820 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CBA91D96930B00483820 /* ItemListVC.swift */; };
+		D703CBAC1D96A11500483820 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CBAB1D96A11500483820 /* HomeVC.swift */; };
+		D703CBAE1D96AA5B00483820 /* SelectItemForSendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703CBAD1D96AA5B00483820 /* SelectItemForSendVC.swift */; };
+		D70C9FCD1D9A8D50009A3CC7 /* ShowDetailTransportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C9FCC1D9A8D50009A3CC7 /* ShowDetailTransportVC.swift */; };
 		D7BBA7301D925F050090C15B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBA72F1D925F050090C15B /* AppDelegate.swift */; };
 		D7BBA7321D925F050090C15B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBA7311D925F050090C15B /* ViewController.swift */; };
 		D7BBA7351D925F050090C15B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BBA7331D925F050090C15B /* Main.storyboard */; };
@@ -55,7 +58,11 @@
 		D703CB971D96720000483820 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapVC.swift; path = EmployerProject/MapVC.swift; sourceTree = "<group>"; };
 		D703CB9F1D96872000483820 /* SelectCarTypeAndDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectCarTypeAndDateVC.swift; path = EmployerProject/SelectCarTypeAndDateVC.swift; sourceTree = "<group>"; };
 		D703CBA11D968AFD00483820 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
-		D703CBA51D968F9600483820 /* ItemListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListVC.swift; path = EmployerProject/ItemListVC.swift; sourceTree = "<group>"; };
+		D703CBA91D96930B00483820 /* ItemListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListVC.swift; path = EmployerProject/ItemListVC.swift; sourceTree = "<group>"; };
+		D703CBAB1D96A11500483820 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = EmployerProject/HomeVC.swift; sourceTree = "<group>"; };
+		D703CBAD1D96AA5B00483820 /* SelectItemForSendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectItemForSendVC.swift; path = EmployerProject/SelectItemForSendVC.swift; sourceTree = "<group>"; };
+		D70C9FC91D9A5DBA009A3CC7 /* EmployerProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EmployerProject.entitlements; sourceTree = "<group>"; };
+		D70C9FCC1D9A8D50009A3CC7 /* ShowDetailTransportVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowDetailTransportVC.swift; path = EmployerProject/ShowDetailTransportVC.swift; sourceTree = "<group>"; };
 		D7BBA72C1D925F050090C15B /* EmployerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BBA72F1D925F050090C15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7BBA7311D925F050090C15B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,12 +124,15 @@
 		D7BBA7231D925F050090C15B = {
 			isa = PBXGroup;
 			children = (
-				D703CBA51D968F9600483820 /* ItemListVC.swift */,
-				D703CBA11D968AFD00483820 /* DatePickerDialog.swift */,
+				D703CBA91D96930B00483820 /* ItemListVC.swift */,
+				D70C9FCC1D9A8D50009A3CC7 /* ShowDetailTransportVC.swift */,
 				D703CB9F1D96872000483820 /* SelectCarTypeAndDateVC.swift */,
 				D703CB971D96720000483820 /* MapVC.swift */,
-				D703CB951D9568DF00483820 /* RegisterVC.swift */,
+				D703CBAD1D96AA5B00483820 /* SelectItemForSendVC.swift */,
+				D703CBAB1D96A11500483820 /* HomeVC.swift */,
 				D703CB931D95612D00483820 /* LoginVC.swift */,
+				D703CB951D9568DF00483820 /* RegisterVC.swift */,
+				D703CBA11D968AFD00483820 /* DatePickerDialog.swift */,
 				D7BBA72E1D925F050090C15B /* EmployerProject */,
 				D7BBA7431D925F050090C15B /* EmployerProjectTests */,
 				D7BBA74E1D925F050090C15B /* EmployerProjectUITests */,
@@ -145,6 +155,7 @@
 		D7BBA72E1D925F050090C15B /* EmployerProject */ = {
 			isa = PBXGroup;
 			children = (
+				D70C9FC91D9A5DBA009A3CC7 /* EmployerProject.entitlements */,
 				D7BBA72F1D925F050090C15B /* AppDelegate.swift */,
 				D7BBA7311D925F050090C15B /* ViewController.swift */,
 				D7BBA7331D925F050090C15B /* Main.storyboard */,
@@ -260,6 +271,11 @@
 					D7BBA72B1D925F050090C15B = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4HNBDUJCRW;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 					D7BBA73F1D925F050090C15B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -451,11 +467,14 @@
 				D703CB981D96720000483820 /* MapVC.swift in Sources */,
 				D703CBA01D96872000483820 /* SelectCarTypeAndDateVC.swift in Sources */,
 				D7BBA7321D925F050090C15B /* ViewController.swift in Sources */,
+				D703CBAE1D96AA5B00483820 /* SelectItemForSendVC.swift in Sources */,
+				D703CBAC1D96A11500483820 /* HomeVC.swift in Sources */,
+				D70C9FCD1D9A8D50009A3CC7 /* ShowDetailTransportVC.swift in Sources */,
 				D703CB961D9568DF00483820 /* RegisterVC.swift in Sources */,
 				D7BBA7301D925F050090C15B /* AppDelegate.swift in Sources */,
 				D703CBA21D968AFD00483820 /* DatePickerDialog.swift in Sources */,
 				D703CB941D95612D00483820 /* LoginVC.swift in Sources */,
-				D703CBA61D968F9600483820 /* ItemListVC.swift in Sources */,
+				D703CBAA1D96930B00483820 /* ItemListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +619,7 @@
 			baseConfigurationReference = 3727FA21E80A3CC264B4DC32 /* Pods-EmployerProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EmployerProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -613,6 +633,7 @@
 			baseConfigurationReference = 9923AE8BD3780DF99BF9E92C /* Pods-EmployerProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EmployerProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

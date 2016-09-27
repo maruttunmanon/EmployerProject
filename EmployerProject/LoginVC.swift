@@ -60,13 +60,13 @@ class LoginVC: UIViewController {
         
         Alamofire.request(.POST, url, parameters: parameters)
             .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
+//                print(response.request)  // original URL request
+//                print(response.response) // URL response
+//                print(response.data)     // server data
+//                print(response.result)   // result of response serialization
                 
                 if let data = response.result.value { //จากการ request url ไป จะได้กลับมาเป็น string(string เป็น fomat แบบ json เลยต้องทำให้เป็น json)
-                    print("JSON: \(data)")
+//                    print("JSON: \(data)")
                     let jsonData = JSON(data) //แปลงข้อมูลเป็น json
                     //print(jsonData)
                     
@@ -74,22 +74,48 @@ class LoginVC: UIViewController {
                         self.alertView("เข้าสู่ระบบไม่สำเร็จ!", msg: "กรุณากรอกข้อมูลให้ถูกต้องนะจ๊ะ!")
                         
                     }else{
-                        let tid = jsonData["Tid"].string //สร้างตัวแปล Tid เพื่อรับค่า Tid ที่ส่งมาแบบ json แปลงเป็น string จากฐานข้อมูลไปใช้
+                        let eid = jsonData["Eid"].string //สร้างตัวแปล Tid เพื่อรับค่า Tid ที่ส่งมาแบบ json แปลงเป็น string จากฐานข้อมูลไปใช้
                         // save ข้อมูลลง เครือง ------
                         let defaults = NSUserDefaults.standardUserDefaults()
                         
-                        defaults.setValue(tid, forKey: "Tid")
+                        defaults.setValue(eid, forKey: "Eid")
                         
                         defaults.synchronize()
+                        
+                        self.data_request_sendtoken("http://findcarproject.com/Employer/insertToken.php", id: eid!, token: "asdsadasdasd")
                         //-------------------
-                        self.performSegueWithIdentifier("goto_Home", sender: self)
+                        
                     }
                 }
         }
         
     }
     
-    
+    func data_request_sendtoken(url:String, id:String, token:String)
+    {
+        let parameters = [
+            "Eid": id,
+            "token": token
+        ]
+        
+        Alamofire.request(.POST, url, parameters: parameters)
+            .responseJSON { response in
+//                print(response.request)  // original URL request
+//                print(response.response) // URL response
+//                print(response.data)     // server data
+//                print(response.result)   // result of response serialization
+                
+                if let data = response.result.value { //จากการ request url ไป จะได้กลับมาเป็น string(string เป็น fomat แบบ json เลยต้องทำให้เป็น json)
+                    //print("JSON: \(data)")
+                    let jsonData = JSON(data) //แปลงข้อมูลเป็น json
+                    //print(jsonData)
+                    
+                      self.performSegueWithIdentifier("goto_Home", sender: self)
+                    
+                }
+        }
+        
+    }
     //func touch เพื่อซ่อน keybord
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
